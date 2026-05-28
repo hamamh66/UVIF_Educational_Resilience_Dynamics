@@ -1,0 +1,2 @@
+model,accuracy,balanced_accuracy,f1,roc_auc,brier_score
+GradientBoosting_UVIF_Decision_Layer,0.9996428571428572,0.9976958525345623,0.9998064640990904,0.9976958525345623,0.000357140466940684
