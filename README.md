@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository provides a reproducible framework for modeling educational resilience, learner-state evolution, temporal educational stability, and intervention-aware learning analytics using a variational equilibrium formulation.
+This repository provides a reproducible framework for modeling educational resilience, learner-state evolution, temporal educational stability, and intervention-aware learning analytics using a dynamic-equilibrium formulation: a bounded composite educational-equilibrium index updated recursively at each learning window.
 
 The framework models learning behavior as a dynamic equilibrium process governed by competing educational factors including:
 
@@ -40,6 +40,12 @@ Governance-oriented educational support priorities are generated from equilibriu
 
 ### Counterfactual Educational Support
 The framework evaluates alternative educational-support strategies and their effect on equilibrium recovery.
+
+### Sensitivity and Robustness Analysis
+The notebook repeats the simulation in 430 runs across 33 configurations (attrition constant, individual and joint weight scaling, threshold shifts, noise level, index feedback) and reports means and standard deviations across random seeds.
+
+### Propagated Counterfactual Support
+Support scenarios are also applied inside the simulation with common random numbers, so that their effect is carried through the dynamics. All counterfactual values are model-based estimates under stated assumptions, not causal effect estimates.
 
 ---
 
